@@ -44,7 +44,7 @@ namespace APIGateway.Controllers
                 if(order.Date != null)
                 {
                     DateTime d2 = (DateTime)order.Date;
-                    int months = (int)(Math.Floor(((d2 - d1).TotalDays / 30.4)));
+                    int months = (int)(Math.Floor(((d1 - d2).TotalDays / 30.4)));
                     if(months <= 2)
                     {
                         report.Add(order);
