@@ -12,7 +12,7 @@ namespace APIGateway.Controllers
     {
         HttpClientUtil HttpClient = new HttpClientUtil();
         [HttpGet, Route("DriverOrders")]
-        public async Task<List<Order>> AssignDriver(int driverId)
+        public async Task<List<Order>> DriverOrders(int driverId)
         {
             List<Order> orders = await HttpClient.RunAsyncGetAll<Order>("https://localhost:44305/api/Order/GetOrder");
             orders = orders.FindAll(x => x.DriverId == driverId);
@@ -32,5 +32,14 @@ namespace APIGateway.Controllers
             orders = orders.FindAll(x => x.DriverId == driverId && x.IsDeliver == true);
             return orders;
         }
+        [HttpGet, Route("DeliverdOrder")]
+        public async Task<bool> DeliverdOrder(int orderId)
+        {
+            Order order = await HttpClient.RunAsyncGet<int, Order>("https://localhost:44305/api/Order/GetOrderById", orderId);
+            order.IsDeliver = true;
+            bool isDeliverd = await HttpClient.RunAsyncPost<Order, bool>("https://localhost:44305/api/Order/UpdateOrder", order);
+            return isDeliverd;
+        }
+
     }
 }
