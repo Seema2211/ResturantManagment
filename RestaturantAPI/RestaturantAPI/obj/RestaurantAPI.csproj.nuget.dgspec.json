@@ -1,0 +1,108 @@
+{
+  "format": 1,
+  "restore": {
+    "D:\\MicroService\\RestaturantManagment\\RestaturantAPI\\RestaturantAPI\\RestaurantAPI.csproj": {}
+  },
+  "projects": {
+    "D:\\MicroService\\RestaturantManagment\\RestaturantAPI\\RestaturantAPI\\RestaurantAPI.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\MicroService\\RestaturantManagment\\RestaturantAPI\\RestaturantAPI\\RestaurantAPI.csproj",
+        "projectName": "RestaurantAPI",
+        "projectPath": "D:\\MicroService\\RestaturantManagment\\RestaturantAPI\\RestaturantAPI\\RestaurantAPI.csproj",
+        "packagesPath": "C:\\Users\\seema.kakadiya\\.nuget\\packages\\",
+        "outputPath": "D:\\MicroService\\RestaturantManagment\\RestaturantAPI\\RestaturantAPI\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\seema.kakadiya\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "D:\\MicroService\\RestaturantManagment\\RestaturantAPI\\RestaturantRepository\\RestaurantRepository.csproj": {
+                "projectPath": "D:\\MicroService\\RestaturantManagment\\RestaturantAPI\\RestaturantRepository\\RestaurantRepository.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[3.1.11, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[3.1.11, )"
+            },
+            "Microsoft.Extensions.Configuration": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
+            "Microsoft.Extensions.DependencyInjection": {
+              "target": "Package",
+              "version": "[3.1.11, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[5.6.3, )"
+            },
+            "System.Configuration.ConfigurationManager": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.102\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\MicroService\\RestaturantManagment\\RestaturantAPI\\RestaturantRepository\\RestaurantRepository.csproj": {
+      "restore": {
+        "projectUniqueName": "D:\\MicroService\\RestaturantManagment\\RestaturantAPI\\RestaturantRepository\\RestaurantRepository.csproj",
+        "projectName": "RestaurantRepository",
+        "projectPath": "D:\\MicroService\\RestaturantManagment\\RestaturantAPI\\RestaturantRepository\\RestaurantRepository.csproj"
+      },
+      "frameworks": {
+        "net472": {}
+      }
+    }
+  }
+}
