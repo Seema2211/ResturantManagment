@@ -30,7 +30,11 @@
         "frameworks": {
           "net5.0": {
             "targetAlias": "net5.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "D:\\MicroService\\RestaturantManagment\\IdentityAPI\\IdentityRepository\\IdentityRepository\\IdentityRepository.csproj": {
+                "projectPath": "D:\\MicroService\\RestaturantManagment\\IdentityAPI\\IdentityRepository\\IdentityRepository\\IdentityRepository.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
@@ -47,13 +51,37 @@
               "target": "Package",
               "version": "[3.1.6, )"
             },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[3.1.11, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[3.1.11, )"
+            },
+            "Microsoft.Extensions.Configuration": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
+            "Microsoft.Identity.Client": {
+              "target": "Package",
+              "version": "[4.27.0, )"
+            },
+            "Microsoft.IdentityModel.JsonWebTokens": {
+              "target": "Package",
+              "version": "[6.8.0, )"
+            },
+            "Microsoft.IdentityModel.Tokens": {
+              "target": "Package",
+              "version": "[6.8.0, )"
+            },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[5.6.3, )"
             },
             "System.IdentityModel.Tokens.Jwt": {
               "target": "Package",
-              "version": "[6.7.1, )"
+              "version": "[6.8.0, )"
             }
           },
           "imports": [
@@ -74,8 +102,18 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.102\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.200\\RuntimeIdentifierGraph.json"
         }
+      }
+    },
+    "D:\\MicroService\\RestaturantManagment\\IdentityAPI\\IdentityRepository\\IdentityRepository\\IdentityRepository.csproj": {
+      "restore": {
+        "projectUniqueName": "D:\\MicroService\\RestaturantManagment\\IdentityAPI\\IdentityRepository\\IdentityRepository\\IdentityRepository.csproj",
+        "projectName": "IdentityRepository",
+        "projectPath": "D:\\MicroService\\RestaturantManagment\\IdentityAPI\\IdentityRepository\\IdentityRepository\\IdentityRepository.csproj"
+      },
+      "frameworks": {
+        "net472": {}
       }
     }
   }
